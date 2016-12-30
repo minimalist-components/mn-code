@@ -13,7 +13,7 @@
   "homepage": "",
   "dependencies": {
     "document-register-element": "^1.3.0",
-    "highlightjs-material-dark-theme": "git://github.com/darlanmendonca/highlightjs-material-dark-theme.git"
+    "highlightjs-material-dark-theme": "git://github.com/darlanmendonca/highlightjs-material-dark-theme.git#bower"
   },
   "devDependencies": {
     "mn-gh-page": "^0.0.5"
