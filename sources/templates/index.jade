@@ -12,25 +12,13 @@ html
 
   style.
     mn-code {
-      margin: 1em;
+      margin: 0 1em;
       position: relative;
-    }
-
-    mn-code:before {
-      content: attr(class);
-      position: absolute;
-      top: -1em;
-      left: 0;
     }
 
     .demo {
       width: 100%;
-    }
-
-    @media (max-width: 959px) {
-      .demo {
-        margin-top: 80px;
-      }
+      margin-top: 80px;
     }
 body
   h2 mn-code
@@ -39,15 +27,19 @@ body
   .layout-fullscreen.layout-centered
     .layout-container: .layout-column.demo
       mn-code.sh.
+        # shell script
         say 'hello'
 
       mn-code.html.
+        <!-- html -->
         <h1>hello</h1>
 
       mn-code.css.
+        /* css */
         body {background: red}
 
       mn-code.js.
+        // javascript
         console.log('hello')
         
   //- script
