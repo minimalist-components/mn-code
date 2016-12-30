@@ -12,7 +12,19 @@ html
 
   style.
     mn-code {
-      margin: 0 1em;
+      margin: 1em;
+      position: relative;
+    }
+
+    mn-code:before {
+      content: attr(class);
+      position: absolute;
+      top: -1em;
+      left: 0;
+    }
+
+    .demo {
+      width: 100%;
     }
 
     @media (max-width: 959px) {
@@ -25,7 +37,7 @@ body
   include github-corner
 
   .layout-fullscreen.layout-centered
-    .layout-column.layout-sm-row.demo
+    .layout-container: .layout-column.demo
       mn-code.sh.
         echo 'hello'
 
