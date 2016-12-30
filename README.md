@@ -26,7 +26,7 @@ Use the tag `mn-code` and put your code
 </mn-code>
 ```
 
-the component automatically recognize teh language, but if prefer, specify the language, using a css class.
+the component automatically recognize the language, but if prefer, specify the language, using a css class.
 the list available is:
 
 - html
