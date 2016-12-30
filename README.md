@@ -21,13 +21,15 @@ Use the tag `mn-code` and put your code
 
 ```html
 <mn-code class="js">
+  // a hello world
   console.log('hello')
 </mn-code>
 ```
 
-the css class available is
+the component automatically recognize teh language, but if prefer, specify the language, using a css class.
+the list available is:
 
 - html
 - css 
 - js
-- sh
+- sh (shell script/bash)
