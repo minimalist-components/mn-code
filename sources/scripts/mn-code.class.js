@@ -8,6 +8,7 @@ class MnCode extends HTMLElement {
   setMarkup() {
     const pre = document.createElement('pre')
     const code = document.createElement('code')
+    code.classList.add(this.getAttribute('class'))
     code.textContent = this.innerHTML
 
     pre.append(code)
