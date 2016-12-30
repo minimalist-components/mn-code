@@ -2,6 +2,7 @@ import gulp from 'gulp'
 import bowerFiles from 'bower-files'
 import minifyCss from 'gulp-minify-css'
 import concat from 'gulp-concat'
+import path from 'path'
 
 gulp.task('vendorCSS', vendorCSSTask)
 

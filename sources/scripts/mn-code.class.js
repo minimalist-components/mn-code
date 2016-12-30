@@ -2,6 +2,7 @@ class MnCode extends HTMLElement {
   constructor(self) {
     self = super(self)
     this.setMarkup()
+    this.setHighlight()
     return self
   }
 
@@ -14,6 +15,11 @@ class MnCode extends HTMLElement {
     pre.append(code)
     this.textContent = ''
     this.insertBefore(pre, this.firstChild)
+  }
+
+  setHighlight() {
+    const code = this.querySelector('code')
+    window.hljs.highlightBlock(code)
   }
 }
 

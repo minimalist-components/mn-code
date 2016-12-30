@@ -9,12 +9,23 @@ html
   
   link(rel='stylesheet' href='vendor.css')
   link(rel='stylesheet' href='mn-code.css')
+
+  style.
+    mn-code {
+      margin: 0 1em;
+    }
+
+    @media (max-width: 959px) {
+      .demo {
+        margin-top: 80px;
+      }
+    }
 body
   h2 mn-code
   include github-corner
 
   .layout-fullscreen.layout-centered
-    .layout-column.layout-sm-row
+    .layout-column.layout-sm-row.demo
       mn-code.sh.
         echo 'hello'
 
