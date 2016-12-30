@@ -3,12 +3,12 @@ html
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
   
-  style
+  //- style
     include ../../docs/vendor.css
     include ../../dist/mn-code.css
   
-  //- link(rel='stylesheet' href='vendor.css')
-  //- link(rel='stylesheet' href='mn-code.css')
+  link(rel='stylesheet' href='vendor.css')
+  link(rel='stylesheet' href='mn-code.css')
 body
   h2 mn-code
   include github-corner
@@ -27,10 +27,10 @@ body
       mn-code.js.
         console.log('hello')
         
-  script
+  //- script
     include ../../docs/vendor.js
     include ../../dist/mn-code.js
 
-  //- script(src='vendor.js')
-  //- script(src='mn-code.js')
+  script(src='vendor.js')
+  script(src='mn-code.js')
 
