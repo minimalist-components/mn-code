@@ -1,5 +1,12 @@
 mn-code {
+  // max-width: 100%;
+  // width: 100%;
+
+  @media (orientation: landscape) and (max-device-width: 599px) {
+    font-size: .5rem
+  }
+
   code {
-    // padding: 2em !important;
+    -webkit-overflow-scrolling: touch;
   }
 }

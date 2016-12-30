@@ -25,7 +25,7 @@ body
   include github-corner
 
   .layout-fullscreen.layout-centered
-    .layout-container: .layout-column.demo
+    .layout-column.demo
       mn-code.sh.
         # shell script
         say 'hello'
@@ -41,7 +41,34 @@ body
       mn-code.js.
         // javascript
         console.log('hello')
-        
+
+        import gulp from 'gulp'
+        import bowerFiles from 'bower-files'
+        import minifyCss from 'gulp-minify-css'
+        import concat from 'gulp-concat'
+
+        gulp.task('vendorCSS', vendorCSSTask)
+
+        function vendorCSSTask() {
+          let dependencies = bowerFiles()
+            .ext('css')
+            .files
+
+          const devDependencies = bowerFiles()
+            .ext('css')
+            .dev()
+            .files
+
+          dependencies = dependencies.concat(devDependencies)
+
+          return gulp
+            .src(dependencies)
+            .pipe(concat('vendor.css'))
+            .pipe(minifyCss({keepSpecialComments: 0}))
+            .pipe(gulp.dest('./docs'))
+        }
+
+
   //- script
     include ../../docs/vendor.js
     include ../../dist/mn-code.js
