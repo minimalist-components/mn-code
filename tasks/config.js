@@ -1,0 +1,40 @@
+import browserSync from 'browser-sync'
+
+module.exports = {
+  templates: {
+    src: './sources/templates/index.jade',
+    dest: './public/',
+  },
+  styles: {
+    src: './sources/styles/*.scss',
+    watch: './sources/styles/**/*.scss',
+    dest: './dist/',
+    sourcemaps: '/sources/styles',
+    output: 'mn-code.css',
+  },
+  scripts: {
+    src: [
+      './sources/**/*.js',
+      '!./sources/**/*.spec.js',
+    ],
+    dest: './dist/',
+    output: 'mn-code.js',
+  },
+  lintScripts: [
+    './gulpfile.babel.js',
+    './tasks/**/*.js',
+    './sources/**/*.js',
+  ],
+  browserSync: browserSync.create(),
+  browserSyncOptions: {
+    server: {
+      baseDir: [
+        './public',
+        './dist',
+      ],
+    },
+    notify: false,
+    reloadDelay: 100,
+    open: false,
+  },
+}
