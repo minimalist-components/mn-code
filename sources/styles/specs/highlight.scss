@@ -1,86 +1,110 @@
 /*
-
-Atom One Dark by Daniel Gamage
-Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
-
-base:    #282c34
-mono-1:  #abb2bf
-mono-2:  #818896
-mono-3:  #5c6370
-hue-1:   #56b6c2
-hue-2:   #61aeee
-hue-3:   #c678dd
-hue-4:   #98c379
-hue-5:   #e06c75
-hue-5-2: #be5046
-hue-6:   #d19a66
-hue-6-2: #e6c07b
-
-*/
+ * highlightjs-material-dark-theme
+ * Material Dark theme for Highlight.js
+ * Based off of https://github.com/equinusocio/material-theme
+ * For use with Highlight.js, https://github.com/isagalaev/highlight.js
+ */
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
 
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
-  color: #abb2bf;
-  background: #282c34;
+  padding: 1em;
+  background: #2B2B2D;
+  color: #CDD3D8;
+  font-family: "Fira Mono", monospace;
+  font-size: 1em;
+}
+.hljs > *::selection {
+  background-color: #3e4451;
 }
 
-.hljs-comment,
-.hljs-quote {
-  color: #5c6370;
+.hljs-comment {
+  color: #656565;
   font-style: italic;
 }
 
-.hljs-doctag,
-.hljs-keyword,
-.hljs-formula {
-  color: #c678dd;
-}
-
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e06c75;
-}
-
-.hljs-literal {
-  color: #56b6c2;
+.hljs-selector-tag {
+  color: #C792EA;
 }
 
 .hljs-string,
+.hljs-subst {
+  color: #C3E88D;
+}
+
+.hljs-number,
 .hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-  color: #98c379;
-}
-
-.hljs-built_in,
-.hljs-class .hljs-title {
-  color: #e6c07b;
-}
-
-.hljs-attr,
 .hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-  color: #d19a66;
+.hljs-template-variable {
+  color: #F77669;
+}
+
+.hljs-keyword {
+  color: #C792EA;
+}
+.hljs-function > .hljs-title {
+  color: #75A5FF;
+}
+.hljs-tag {
+  color: #abb2bf;
+}
+.hljs-name {
+  color: #e06c75;
+}
+.hljs-type {
+  color: #da4939;
+}
+
+.hljs-attribute {
+  color: #80CBBF;
 }
 
 .hljs-symbol,
 .hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-link {
+  color: #C792EA;
+}
+
+.hljs-params {
+  color: #EEFFF7;
+}
+
+
+.hljs-meta {
+  color: #75A5FF;
+}
+
 .hljs-title {
-  color: #61aeee;
+  color: #75A5FF;
+}
+
+.hljs-section {
+  color: #ffc66d;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-selector-class {
+  color: #FFCB68;
+}
+
+.hljs-selector-id {
+  color: #F77669;
 }
 
 .hljs-emphasis {
