@@ -1,6 +1,8 @@
 # mn-code
 
-<!-- See the [demo](http://codepen.io/darlanmendonca/full/JRGoxv) -->
+A component to display code with syntax highlight
+
+<!-- See the [demo](minimalist-components.github.io/mn-code/) -->
 
 <!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-code/master/sources/example/mn-code.gif)](http://codepen.io/darlanmendonca/full/akgXQq)  -->
 
@@ -28,4 +30,4 @@ the css class available is
 - html
 - css 
 - js
-- bash
+- sh
