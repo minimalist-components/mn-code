@@ -12,7 +12,8 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "document-register-element": "^1.3.0"
+    "document-register-element": "^1.3.0",
+    "highlightjs-material-dark-theme": "git://github.com/darlanmendonca/highlightjs-material-dark-theme.git"
   },
   "devDependencies": {
     "mn-gh-page": "^0.0.5"
