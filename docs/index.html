@@ -1,4 +1,4 @@
-<html><meta name="viewport" content="width=device-width, user-scalable=no"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/><link rel="stylesheet" href="docs/vendor.css"/><link rel="stylesheet" href="dist/mn-code.css"/><style>mn-code {
+<html><meta name="viewport" content="width=device-width, user-scalable=no"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/><link rel="stylesheet" href="https://rawgit.com/minimalist-components/mn-code/master/docs/vendor.css"/><link rel="stylesheet" href="https://rawgit.com/minimalist-components/mn-code/master/dist/mn-code.css"/><style>mn-code {
   margin: 0 1em;
   position: relative;
 }
@@ -14,4 +14,12 @@ say 'hello'
 body {background: red}
 </mn-code><mn-code class="js">// javascript
 console.log('hello')
-</mn-code></div></div><script src="docs/vendor.js"></script><script src="dist/mn-code.js"></script></body>
+</mn-code></div></div><div class="docs layout-container"><mn-code class="sh"># to install this module
+bower install --save mn-code
+</mn-code><p>Or just download the main files, located in dist/</p><h3>usage</h3><p>Use the tag <strong class="tag">mn-code</strong> and put your code</p><mn-code class="html"><mn-code>
+  // a hello world
+  console.log('hello')
+</mn-code>
+</mn-code><p>will show</p><mn-code class="js">// a hello world
+console.log('hello')
+</mn-code><p>you dont need use the class to define language, this will be identified automatically, but you can use the following classes actually</p><ul><li>.html</li><li>.css</li><li>.js</li><li>.sh (to shellscript/bash)</li></ul></div><script href="https://rawgit.com/minimalist-components/mn-code/master/docs/vendor.js"></script><script href="https://rawgit.com/minimalist-components/mn-code/master/dist/mn-code.js"></script></body>
