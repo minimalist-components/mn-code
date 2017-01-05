@@ -1,4 +1,4 @@
-class MnCode extends HTMLElement {
+class MnCode extends HTMLElement { // eslint-disable-line no-unused-vars
   constructor(self) {
     self = super(self)
     this.setMarkup()
@@ -12,7 +12,7 @@ class MnCode extends HTMLElement {
     code.classList = this.classList
     code.textContent = this.innerHTML
 
-    pre.append(code)
+    pre.appendChild(code)
     this.textContent = ''
     this.insertBefore(pre, this.firstChild)
   }

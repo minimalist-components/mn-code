@@ -14,6 +14,7 @@ function vendorCSSTask() {
   const devDependencies = bowerFiles()
     .ext('css')
     .dev()
+    .match('!**/mn-code.css')
     .files
 
   dependencies = dependencies.concat(devDependencies)

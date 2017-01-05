@@ -12,11 +12,11 @@ function vendorJSTask() {
 
   const devDependencies = bowerFiles()
     .ext('js')
+    .match('!**/mn-code.js')
     .dev()
     .files
 
   dependencies = dependencies.concat(devDependencies)
-
 
   return gulp
     .src(dependencies)
