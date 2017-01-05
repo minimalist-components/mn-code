@@ -6,7 +6,7 @@
 
 A component to display code with syntax highlight
 
-<!-- See the [demo](minimalist-components.github.io/mn-code/) -->
+See the [demo](https://minimalist-components.github.io/mn-code/)
 
 <!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-code/master/sources/example/mn-code.gif)](http://codepen.io/darlanmendonca/full/akgXQq)  -->
 
