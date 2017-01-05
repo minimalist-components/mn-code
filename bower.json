@@ -16,6 +16,6 @@
     "highlightjs-material-dark-theme": "git://github.com/darlanmendonca/highlightjs-material-dark-theme.git#bower"
   },
   "devDependencies": {
-    "mn-gh-page": "0.0.10"
+    "mn-gh-page": "^0.0.11"
   }
 }
