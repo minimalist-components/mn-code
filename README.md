@@ -1,4 +1,4 @@
-[![Bower version](https://badge.fury.io/bo/mn-code.svg)](https://badge.fury.io/bo/mn-code)
+[![npm version](https://badge.fury.io/js/mn-layout.svg)](https://badge.fury.io/js/mn-layout)
 [![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/mn-code.svg)](https://gemnasium.com/github.com/minimalist-components/mn-code)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
 
@@ -13,11 +13,8 @@ See the [demo](https://minimalist-components.github.io/mn-code/)
 ### Install
 
 ```sh
-bower install --save mn-code
+npm install --save mn-code
 ```
-
-Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-code/tree/master/dist)
-
 
 ### Usage
 
