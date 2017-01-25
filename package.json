@@ -1,15 +1,25 @@
 {
   "name": "mn-code",
-  "private": true,
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.1",
+  "description": "a component to display code with syntax highlight",
   "scripts": {
     "start": "scripts/start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Darlan Mendonça <darlanmendonca@gmail.com>",
+  "keywords": [
+    "highlight",
+    "highlightjs",
+    "syntax",
+    "code",
+    "syntax-highlight"
+  ],
+  "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
+  "homepage": "https://github.com/minimalist-components/mn-code",
   "license": "MIT",
+  "dependencies": {
+    "document-register-element": "^1.3.0",
+    "highlightjs-material-dark-theme": "git+https://github.com/darlanmendonca/highlightjs-material-dark-theme.git#npm-package"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
     "bower-files": "^3.13.3",
