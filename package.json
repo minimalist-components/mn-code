@@ -1,6 +1,6 @@
 {
   "name": "mn-code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a component to display code with syntax highlight",
   "scripts": {
     "start": "scripts/start.sh",
