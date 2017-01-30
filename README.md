@@ -8,6 +8,10 @@ A component to display code with syntax highlight
 
 See the [demo](https://minimalist-components.github.io/mn-code/)
 
+<a href="https://minimalist-components.github.io/mn-code/">
+<img src="https://raw.githubusercontent.com/minimalist-components/mn-code/master/preview.gif">
+</a>
+
 <!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-code/master/sources/example/mn-code.gif)](http://codepen.io/darlanmendonca/full/akgXQq)  -->
 
 ### Install
