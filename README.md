@@ -16,6 +16,8 @@ See the [demo](https://minimalist-components.github.io/mn-code/)
 npm install --save mn-code
 ```
 
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-code/tree/master/dist) with your preferred tool.
+
 ### Usage
 
 Use the tag `mn-code` and put your code
