@@ -1,6 +1,6 @@
 {
   "name": "mn-code",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a component to display code with syntax highlight",
   "scripts": {
     "start": "scripts/start.sh",
@@ -14,6 +14,10 @@
     "syntax-highlight"
   ],
   "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
+  "main": "dist/mn-code.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/minimalist-components/mn-code.git"
