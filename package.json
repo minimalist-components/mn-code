@@ -1,6 +1,6 @@
 {
   "name": "mn-code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a component to display code with syntax highlight",
   "scripts": {
     "start": "scripts/start.sh",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "document-register-element": "^1.3.0",
-    "highlightjs-material-dark-theme": "git+https://github.com/darlanmendonca/highlightjs-material-dark-theme.git#npm-package"
+    "highlightjs-material-dark-theme": "git+https://github.com/darlanmendonca/highlightjs-material-dark-theme.git#import"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
