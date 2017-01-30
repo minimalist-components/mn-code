@@ -1,27 +1,19 @@
 import gulp from 'gulp'
-import bowerFiles from 'bower-files'
-// import minifyCss from 'gulp-minify-css'
-// import minifyCss from 'gulp-clean-css'
+import packageFiles from 'package-files'
+import minifyCss from 'gulp-clean-css'
 import concat from 'gulp-concat'
 
 gulp.task('vendorCSS', vendorCSSTask)
 
 function vendorCSSTask() {
-  let dependencies = bowerFiles()
-    .ext('css')
-    .files
-
-  const devDependencies = bowerFiles()
-    .ext('css')
-    .dev()
-    .match('!**/mn-code.css')
-    .files
-
-  dependencies = dependencies.concat(devDependencies)
+  const devDependencies = ['mn-gh-page']
+  const dependencies = packageFiles(devDependencies)
+    .filter(dep => dep.endsWith('.css'))
+    .filter(dep => !dep.includes('mn-code.css'))
 
   return gulp
     .src(dependencies)
     .pipe(concat('vendor.css'))
-    // .pipe(minifyCss())
+    .pipe(minifyCss())
     .pipe(gulp.dest('./docs'))
 }
