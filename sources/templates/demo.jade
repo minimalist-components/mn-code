@@ -12,7 +12,6 @@ html
     }
 
     .demo {
-      width: 100%;
       margin-top: 80px;
     }
 
@@ -21,27 +20,28 @@ body
   include github-corner
 
   .mn-layout-fullscreen.mn-layout-centered
-    .mn-layout-column.demo
-      mn-code.sh.
-        # shell script
-        say 'hello'
+    .mn-layout-container
+      .mn-layout-column.demo
+        mn-code.flex.
+          # shell script
+          say 'hello'
 
-      mn-code.html.
-        <!-- html -->
-        <h1>hello</h1>
+        mn-code.flex.
+          <!-- html -->
+          <h1>hello</h1>
 
-      mn-code.css.
-        /* css */
-        body {background: red}
+        mn-code.flex.
+          /* css */
+          body {background: red}
 
-      mn-code.js.
-        // javascript
-        console.log('hello')
+        mn-code.flex.
+          // javascript
+          console.log('hello')
 
   .docs.mn-layout-container
     mn-code.sh.
       # to install this module
-      bower install --save mn-code
+      npm install --save mn-code
 
     p Or just download the main files, located in dist/
 
@@ -59,13 +59,7 @@ body
       // a hello world
       console.log('hello')
 
-    p you dont need use the class to define language, this will be identified automatically, but you can use the following classes actually
-
-    ul
-      li .html
-      li .css
-      li .js
-      li .sh (to shellscript/bash)
+    p the component automatically recognize the language, but if you want specify the language, using a css class. The following classes be available <em>html</em>, <em>css</em>, <em>js</em>, and <em>sh</em> (shell script).
   
   
   block scripts

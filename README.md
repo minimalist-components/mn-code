@@ -27,10 +27,4 @@ Use the tag `mn-code` and put your code
 </mn-code>
 ```
 
-the component automatically recognize the language, but if prefer, specify the language, using a css class.
-the list available is:
-
-- html
-- css 
-- js
-- sh (shell script/bash)
+the component automatically recognize the language, but if you want specify the language, using a css class. The following classes be available `html`, `css`, `js`, and `sh` (shell script).
